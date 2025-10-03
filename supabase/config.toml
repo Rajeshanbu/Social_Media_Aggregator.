@@ -1,1 +1,10 @@
 project_id = "toeeigwnxuaozquiunrm"
+
+[functions.github-fetch]
+verify_jwt = false
+
+[functions.reddit-fetch]
+verify_jwt = false
+
+[functions.analytics]
+verify_jwt = false

@@ -14,7 +14,111 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      analytics_metadata: {
+        Row: {
+          created_at: string
+          error_message: string | null
+          id: string
+          last_fetch: string
+          source: string
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          error_message?: string | null
+          id?: string
+          last_fetch?: string
+          source: string
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          error_message?: string | null
+          id?: string
+          last_fetch?: string
+          source?: string
+          status?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      github_issues: {
+        Row: {
+          author: string
+          comment_count: number
+          created_at: string
+          id: string
+          issue_number: number
+          repository: string
+          state: string
+          title: string
+          updated_at: string
+          url: string
+        }
+        Insert: {
+          author: string
+          comment_count?: number
+          created_at?: string
+          id?: string
+          issue_number: number
+          repository: string
+          state: string
+          title: string
+          updated_at?: string
+          url: string
+        }
+        Update: {
+          author?: string
+          comment_count?: number
+          created_at?: string
+          id?: string
+          issue_number?: number
+          repository?: string
+          state?: string
+          title?: string
+          updated_at?: string
+          url?: string
+        }
+        Relationships: []
+      }
+      reddit_posts: {
+        Row: {
+          author: string
+          created_at: string
+          id: string
+          post_id: string
+          subreddit: string
+          title: string
+          updated_at: string
+          upvotes: number
+          url: string
+        }
+        Insert: {
+          author: string
+          created_at?: string
+          id?: string
+          post_id: string
+          subreddit: string
+          title: string
+          updated_at?: string
+          upvotes?: number
+          url: string
+        }
+        Update: {
+          author?: string
+          created_at?: string
+          id?: string
+          post_id?: string
+          subreddit?: string
+          title?: string
+          updated_at?: string
+          upvotes?: number
+          url?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
