@@ -1,73 +1,99 @@
-# Welcome to your Lovable project
+# Social Media Aggregator
 
-## Project info
+A backend system that fetches and analyzes data from **GitHub** and **Reddit** using their official APIs. This project aggregates issues and posts, identifies top authors, and provides analytics via REST APIs.
 
-**URL**: https://lovable.dev/projects/cd0c84f4-5cf5-4922-877e-2a7f4d0ccf4f
+---
 
-## How can I edit this code?
+## 🚀 Project Info
 
-There are several ways of editing your application.
+* **Live App**: [Social Media Aggregator](https://rajeshtask.netlify.app/)
+* **Tech Stack**: Node.js · TypeScript · React · Vite · shadcn-ui · Tailwind CSS · Supabase
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cd0c84f4-5cf5-4922-877e-2a7f4d0ccf4f) and start prompting.
+## ⚡ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+**GitHub Analytics:**
 
-**Use your preferred IDE**
+* Fetch all issues from specified repositories
+* Top 5 GitHub issues by comment count
+* Author with the most GitHub issues across all repositories
+* Repository with the most open issues
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Reddit Analytics:**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* Fetch posts from specified subreddits
+* Top 5 Reddit posts by upvotes
+* Reddit author with the highest total upvotes across their posts
 
-Follow these steps:
+**Backend & System Features:**
+
+* REST APIs for fetching GitHub and Reddit analytics
+* Data caching for performance
+* Scheduled background tasks to keep data updated
+* Proper API authentication and error handling
+* Scalable design with indexing and efficient queries
+
+---
+
+## 🛠️ Development Setup
+
+Make sure you have **Node.js** and **npm** installed.
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate into the project directory
+cd social-media-aggregator
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🌍 Deployment
 
-**Use GitHub Codespaces**
+This project is deployed on **Netlify**:
+👉 [https://rajeshtask.netlify.app/](https://rajeshtask.netlify.app/)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+To deploy your own version:
 
-## What technologies are used for this project?
+* Create a Netlify account
+* Link this GitHub repository
+* Configure build command: `npm run build`
+* Configure publish directory: `dist/`
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🔗 Custom Domain
 
-## How can I deploy this project?
+You can connect a custom domain via Netlify:
 
-Simply open [Lovable](https://lovable.dev/projects/cd0c84f4-5cf5-4922-877e-2a7f4d0ccf4f) and click on Share -> Publish.
+* Go to **Netlify Dashboard → Domain Settings**
+* Add your custom domain and configure DNS
+* Netlify provides free HTTPS via Let’s Encrypt
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 📂 Folder Structure
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```
+social-media-aggregator/
+├── src/              # Application source code
+│   ├── components/   # Reusable UI components
+│   ├── pages/        # Page-level components
+│   ├── hooks/        # Custom hooks
+│   ├── lib/          # Utilities and API clients
+│   └── App.tsx       # Root application entry
+├── supabase/         # Supabase configuration (if used)
+├── package.json      # Dependencies and scripts
+└── vite.config.ts    # Vite configuration
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
