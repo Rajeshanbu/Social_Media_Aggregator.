@@ -1,12 +1,12 @@
 # Social Media Aggregator
-
 A backend system that fetches and analyzes data from **GitHub** and **Reddit** using their official APIs. This project aggregates issues and posts, identifies top authors, and provides analytics via REST APIs.
 
 ---
 
 ## 🚀 Project Info
 
-* **Live App**: [Social Media Aggregator](https://socialmediaaggregator.lovable.app/)
+* **Hosted on Netlify** ✅
+* **Live App**: [https://socialmediaaggregator.netlify.app/](https://socialmediaaggregator.netlify.app/)
 * **Tech Stack**: Node.js · TypeScript · React · Vite · shadcn-ui · Tailwind CSS · Supabase
 
 ---
@@ -58,8 +58,8 @@ npm run dev
 
 ## 🌍 Deployment
 
-This project is deployed on **Netlify**:
-👉 [https://socialmediaaggregator.lovable.app/](https://socialmediaaggregator.lovable.app/)
+This project is **hosted on Netlify**:
+👉 [https://socialmediaaggregator.netlify.app/](https://socialmediaaggregator.netlify.app/)
 
 To deploy your own version:
 
@@ -95,4 +95,3 @@ social-media-aggregator/
 └── vite.config.ts    # Vite configuration
 ```
 
----
