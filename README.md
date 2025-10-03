@@ -6,7 +6,7 @@ A backend system that fetches and analyzes data from **GitHub** and **Reddit** u
 
 ## 🚀 Project Info
 
-* **Live App**: [Social Media Aggregator](https://rajeshtask.netlify.app/)
+* **Live App**: [Social Media Aggregator](https://socialmediaaggregator.lovable.app/)
 * **Tech Stack**: Node.js · TypeScript · React · Vite · shadcn-ui · Tailwind CSS · Supabase
 
 ---
@@ -59,7 +59,7 @@ npm run dev
 ## 🌍 Deployment
 
 This project is deployed on **Netlify**:
-👉 [https://rajeshtask.netlify.app/](https://rajeshtask.netlify.app/)
+👉 [https://socialmediaaggregator.lovable.app/](https://socialmediaaggregator.lovable.app/)
 
 To deploy your own version:
 
@@ -96,4 +96,3 @@ social-media-aggregator/
 ```
 
 ---
-
